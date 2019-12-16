@@ -48,6 +48,7 @@
                     android:onClick="controlClick"
                     android:tint="@android:color/white"
                     android:src="@drawable/ic_repeat"/>
+
                 <androidx.appcompat.widget.AppCompatSeekBar
                     android:id="@+id/seek_song_progressbar"
                     android:layout_width="0dp"
@@ -55,7 +56,7 @@
                     android:layout_weight="1"
                     android:progress="0"
                     android:progressDrawable="@drawable/seek_progress_bar"
-                    android:thumb="@drawable/seek_thumb"/>
+                    android:thumb="@drawable/seek_thumb" />
 
                 <ImageButton
                     android:layout_width="?attr/actionBarSize"
