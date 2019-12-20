@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBrick"
+    android:id="@+id/searchListItem"
+    tools:showIn="@layout/content_main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:src="@drawable/song_image"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lorem Ipsum Song"
+                android:textColor="@android:color/white"
+                android:paddingTop="10dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Various Artist"
+                android:textColor="@android:color/darker_gray"
+                android:paddingTop="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Song Descrition"
+                android:textColor="@android:color/darker_gray"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
