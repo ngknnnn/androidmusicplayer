@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <vn.edu.usth.musicplayer.searchBar.JSearchView
         android:id="@+id/searchBar"
         style="@style/MaterialSearchBarDark"
@@ -7,17 +9,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|top"
         />
-    <EditText
+
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/edit_text"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
+        android:layout_width="290dp"
+        app:searchIcon="@null"
+        android:layout_height="55dp"
         android:background="@null"
         android:layout_centerInParent="true"
         android:textCursorDrawable="@null"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="20dp"
         android:singleLine="true"
-        android:visibility="invisible"
-        android:layout_marginLeft="12dp"/>
+        android:visibility="invisible"/>
+
 </merge>

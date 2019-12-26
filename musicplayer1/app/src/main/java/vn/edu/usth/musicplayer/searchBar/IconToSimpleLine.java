@@ -43,7 +43,7 @@ public class IconToSimpleLine extends Controller {
                 mRectF.bottom + cr - j, mRectF.right + cr - j, mRectF.bottom + cr - j, paint);
         if (mPro > 0.5f) {
             canvas.drawArc(mRectF, 45, -((mPro - 0.5f) * 360 * 2), false, paint);
-            canvas.drawLine(mRectF.right - j, mRectF.bottom - j,
+            canvas.drawLine(mRectF.right - j+5, mRectF.bottom - j,
                     mRectF.right + cr - j, mRectF.bottom + cr - j, paint);
         } else {
             canvas.drawLine(mRectF.right - j + cr * (1 - mPro), mRectF.bottom - j +
@@ -51,7 +51,7 @@ public class IconToSimpleLine extends Controller {
         }
         canvas.restore();
         mRectF.left = cx - cr + 240 * (1 - mPro);
-        mRectF.right = cx + cr + 300 * (1 - mPro);
+        mRectF.right = cx + cr + 240 * (1 - mPro);
         mRectF.top = cy - cr;
         mRectF.bottom = cy + cr;
     }
@@ -67,8 +67,8 @@ public class IconToSimpleLine extends Controller {
                     mRectF.right + cr - j, mRectF.bottom + cr - j, paint);
         }
 
-        canvas.drawLine((mRectF.right + cr - j-1000) * (1 - mPro * .8f), mRectF.bottom + cr - j,
-                mRectF.right + cr - j, mRectF.bottom + cr - j, paint);
+        canvas.drawLine((mRectF.right + cr - j-1000) * (1 - mPro * .8f) , mRectF.bottom + cr - j,
+                mRectF.right + cr - j-80, mRectF.bottom + cr - j, paint);
         canvas.restore();
 
         mRectF.left = cx - cr + 240 * mPro;
@@ -78,7 +78,7 @@ public class IconToSimpleLine extends Controller {
     }
 
     private void drawNormalView(Paint paint, Canvas canvas) {
-        cr = getWidth() / 32;
+        cr = getWidth() / 34;
         cx = getWidth() / 2;
         cy = getHeight() / 2;
         mRectF.left = cx - cr;

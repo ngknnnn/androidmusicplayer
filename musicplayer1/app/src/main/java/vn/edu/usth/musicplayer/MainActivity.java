@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addPagerControl();
+        RequestQueue queue = Volley.newRequestQueue(this);
     }
 
     private void addPagerControl() {
